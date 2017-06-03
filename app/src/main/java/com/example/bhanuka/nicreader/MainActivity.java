@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+                    de_nic.setText("");
+                    de_gender.setText("");
+                    de_birth.setText("");
+                    de_age.setText("");
+
                     NIC modelClass = new NIC(nic.getText().toString());
                     de_nic.setText(modelClass.getNicNumber());
                     de_gender.setText(modelClass.getGender());
